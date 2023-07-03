@@ -1,0 +1,33 @@
+// get all users
+http://localhost:3005/users
+
+###
+
+// get specific user
+http://localhost:3005/users/krsanjay11
+
+###
+
+// insert into users
+POST http://localhost:3005/users HTTP/1.1
+content-type: application/json
+
+{
+    "username": "krsanjay11",
+    "bio": "hi there i am sanjay"
+}
+
+###
+// update user
+PUT http://localhost:3005/users/6 HTTP/1.1
+content-type: application/json
+
+{
+    "username": "sanjay",
+    "bio": "hello there"
+}
+
+
+###
+// delete user
+DELETE http://localhost:3005/users/5
